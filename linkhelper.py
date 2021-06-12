@@ -5,7 +5,7 @@
 # SETTINGS #
 shortener = 'vgd' # You can choose between "vgd" and "isgd" shortener services.
 exlist = ('#linux-es') # Channels exclusion list. Eg: ('#channel1') or ('#channel1','channel2').
-uagent = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0'} # A valid browser User-Agent
+uagent = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'} # A valid browser User-Agent
 ############
 
 import hexchat
@@ -40,7 +40,7 @@ def print_title(url, chan, nick, mode, cont):
 
 def get_response(url, agent):
     try:
-        response = requests.get(url, headers = agent)
+        response = requests.get(url, headers= agent, cookies= {'CONSENT': 'PENDING+944'})
         response.close()
         if response.ok:
             if response.headers['content-type'].split('/')[0] == 'text':
