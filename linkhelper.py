@@ -3,9 +3,8 @@
 # This is a Hexchat addon based on 'link-title.py' (https://github.com/Poorchop/hexchat-scripts/blob/master/link-title.py) and 'shortn' (https://github.com/ishu3101/shortn/blob/master/shortn.py). Thanks to 'Pdog' and 'ishu3101' for their job.
 
 # SETTINGS #
-shortener = 'vgd' # You can choose between "vgd" and "isgd" shortener services.
 exlist = ('#linux-es') # Channels exclusion list. Eg: ('#channel1') or ('#channel1','channel2').
-uagent = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0'} # A valid browser User-Agent
+uagent = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:99.0) Gecko/20100101 Firefox/99.0'} # A valid browser User-Agent
 ############
 
 import hexchat
@@ -15,7 +14,7 @@ import threading
 
 __module_name__ = 'LinkHelper'
 __module_author__ = 'Wibol'
-__module_version__ = '1.0'
+__module_version__ = '1.1'
 __module_description__ = 'Displays the "nick", "html title" and "short URL" in Hexchat when a HTTP URL is posted in IRC channels.'
 
 events = ('Channel Message', 'Channel Action',
