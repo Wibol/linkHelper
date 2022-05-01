@@ -24,11 +24,6 @@ events = ('Channel Message', 'Channel Action',
           'Private Message', 'Private Message to Dialog',
           'Private Action', 'Private Action to Dialog')
 
-apis = {
-	'vgd' : 'https://v.gd/create.php?format=json&url=',
-	'isgd' : 'https://is.gd/create.php?format=json&url='
-}
-
 def print_title(url, chan, nick, mode, cont):
     if 'http://' in url or 'https://' in url: # Checking HTTP URL
         title = get_response(url, uagent) # Getting URL response avoiding User-Agent lockout
@@ -67,10 +62,11 @@ def snarfer(html_doc, encoding=''):
 
 def shorten(url):
     try: # Trying to shorten URL
-        sresponse = requests.get(apis[shortener] + url)
-        surl = sresponse.json()['shorturl']
+        api = 'https://tinyurl.com/api-create.php?url='
+        sresponse = requests.get(api + url)
+        surl = sresponse.text
     except Exception as err:
-        hexchat.prnt('LinkHelper info: A shortening error occurred.')
+        hexchat.prnt('A shortening error occurred:', sresponse.status_code)
         surl = url
     return surl
 
