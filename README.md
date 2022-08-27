@@ -4,7 +4,7 @@ Hexchat addon that displays the "nick", "html title" and "short URL" when a HTTP
 ## Installation
 1. Download the file to the Hexchat addons directory:
 
-            wget https://github.com/Wibol/Linkhelper/blob/master/linkhelper.py -O ~/.config/hexchat/addons/linkhelper.py
+            wget https://github.com/Wibol/linkHelper/blob/master/linkhelper.py -O ~/.config/hexchat/addons/linkhelper.py
 
 2. Adjust the configuration to your needs:
 
