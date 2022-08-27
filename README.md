@@ -1,5 +1,5 @@
 # LinkHelper
-Hexchat addon that displays locally the "nick", "html title" and "short URL" when a HTTP URL is posted in IRC channels.
+A Python3 Hexchat addon that displays locally the "nick", "html title" and "short URL" when a HTTP URL is posted in IRC channels.
 
 ## Installation
 1. Download the file to the Hexchat addons directory:
