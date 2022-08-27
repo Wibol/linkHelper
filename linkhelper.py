@@ -13,7 +13,7 @@ import html
 import requests
 import threading
 
-__module_name__ = 'LinkHelperBot'
+__module_name__ = 'LinkHelper'
 __module_author__ = 'Wibol'
 __module_version__ = '1.2'
 __module_description__ = 'A Python3 Hexchat addon that displays the "nick", "html title" and "short URL" when a HTTP URL is posted in IRC channels.'
