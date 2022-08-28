@@ -1,4 +1,4 @@
-# LinkHelper
+# linkHelper
 A Python3 Hexchat addon that displays locally the "nick", "html title" and "short URL" when a HTTP URL is posted in IRC channels.
 
 ## Requirements
