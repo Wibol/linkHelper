@@ -15,4 +15,4 @@ Hexchat Python3 plugin:
 
             nano ~/.config/hexchat/addons/linkhelper.py
 
-3. Run "/LOAD linkhelper.py" to load it or restart Hexchat.
+3. Run "/LOAD linkhelper.py" in Hexchat or restart it.
