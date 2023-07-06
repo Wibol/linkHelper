@@ -2,7 +2,9 @@
 A Python3 Hexchat addon that displays locally the "nick", "html title" and "short URL" when a HTTP URL is posted in IRC channels.
 
 ## Requirements
-Hexchat Python3 plugin.
+Hexchat Python3 plugin:
+
+            sudo apt install hexchat-python3
 
 ## Installation
 1. Download the file to the Hexchat addons directory:
